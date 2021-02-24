@@ -11,7 +11,7 @@ var_dump($data);
 
 //批量兑换码入库
 //连接数据库，根据实际使用情况修改相应配置信息
-$conn = mysqli_connect('localhost', 'root', 'root@123', 'juhe');
+$conn = mysqli_connect('localhost', 'root', 'root', 'kaquan');
 $sql = "INSERT INTO kaquan(`no`, `password`) VALUES ";
 $str = '';
 for ($i = 0; $i < count($data); $i++) {
