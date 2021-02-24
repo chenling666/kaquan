@@ -10,7 +10,7 @@ $data = $kaquan->makeCard($prefix, $nums);
 var_dump($data);
 
 //批量兑换码入库
-//连接数据库
+//连接数据库，根据实际使用情况修改相应配置信息
 $conn = mysqli_connect('localhost', 'root', 'root@123', 'juhe');
 $sql = "INSERT INTO kaquan(`no`, `password`) VALUES ";
 $str = '';
